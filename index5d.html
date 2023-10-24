@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CGP Calculator</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/fav.ico">
+  <link rel="stylesheet" href="cgpd.css">
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Belanosima&family=Cabin&family=Dangrek&family=Nabla&family=Permanent+Marker&family=Pixelify+Sans:wght@500&family=Righteous&family=Rowdies:wght@300&family=Signika+Negative:wght@600&family=Sriracha&family=Yatra+One&display=swap" rel="stylesheet">
+
+
+
+
+
+<script src="cgp5.js"></script>
+</head>
+
+<body>
+  <div class="top">
+    <h1>CGPA CALCULATOR</h1>
+    <a href="index5.html"><img src="./images/light.png" width="50px"></a> 
+  </div>
+  <div class="info">
+    <p>Anna University CSE 5th Semester CGPA calculator</p>
+  </div>
+
+
+
+  <div class="mid">
+    <div class="m">
+        <p>Enter your Computer Network Grade:</p>
+        <form method="get">
+          <select name="gen" id="m1">
+          <option value="10" class="box">O
+          </option>
+          <option value="9">A+</option>
+          <option value="8">A</option>
+          <option value="7">B+</option>
+          <option value="6">B</option>
+          <option value="5">C</option>
+          <option value="0">RA</option>
+          </select>
+        </form>
+    </div>
+  
+    <div class="m">
+        <p>Enter your Compiler Design Grade:</p>
+        <form method="get">
+          <select name="gen" id="m2">
+            <option value="10" class="box">O
+            </option>
+            <option value="9">A+</option>
+            <option value="8">A</option>
+            <option value="7">B+</option>
+            <option value="6">B</option>
+            <option value="5">C</option>
+            <option value="0">RA</option>
+          </select>
+        </form>
+    </div>
+    
+    <div class="m">
+      <p>Enter your Cryptography & Cyber Security Grade:</p>
+      <form method="get">
+        <select name="gen" id="m3">
+          <option value="10">O
+          </option>
+          <option value="9">A+</option>
+          <option value="8">A</option>
+          <option value="7">B+</option>
+          <option value="6">B</option>
+          <option value="5">C</option>
+          <option value="0">RA</option>
+        </select>
+      </form>
+    </div>
+    
+    
+    <div class="m">
+      <p>Enter your Distributed Computing Grade:</p>
+      <form method="get">
+        <select name="gen" id="m4" >
+          <option value="10">O
+          </option>
+          <option value="9">A+</option>
+          <option value="8">A</option>
+          <option value="7">B+</option>
+          <option value="6">B</option>
+          <option value="5">C</option>
+          <option value="0">RA</option>
+        </select>
+      </form>
+    </div>
+    
+    
+    <div class="m">
+      <p>Enter your Professional Elective-1 Grade:</p>
+      <form method="get">
+        <select name="gen" id="m5" >
+          <option value="10">O
+          </option>
+          <option value="9">A+</option>
+          <option value="8">A</option>
+          <option value="7">B+</option>
+          <option value="6">B</option>
+          <option value="5">C</option>
+          <option value="0">RA</option>
+        </select>
+      </form>
+    </div>
+    
+    
+    <div class="m">
+      <p>Enter your Professional Elective-2 Grade:</p>
+      <form method="get">
+        <select name="gen" id="m6" >
+          <option value="10">O
+          </option>
+          <option value="9">A+</option>
+          <option value="8">A</option>
+          <option value="7">B+</option>
+          <option value="6">B</option>
+          <option value="5">C</option>
+          <option value="0">RA</option>
+        </select>
+      </form>
+    </div>
+    
+    
+    
+    
+   </div>
+
+  
+  
+
+
+
+
+
+
+
+<div class="submit">
+  <button onclick="calculateSum()">Get CGPA</button>
+</div> 
+
+ 
+ <div class="bottom">
+<div class="res"> 
+<h3>RESULT: <spam id="sum"></spam></h3>
+</div>
+</div>
+
+<div class="link">
+  <h3>Select Semester:</h3>
+  <a href="index1d.html"><button>1</button></a>
+  <a href="index2d.html"><button>2</button></a>
+  <a href="index3d.html"><button>3</button></a>
+  <a href="index4d.html"><button>4</button></a>
+  <a href="index6d.html"><button>6</button></a>
+  <a href="index7d.html"><button>7</button></a>
+  <a href="index8d.html"><button>8</button></a>
+</div>
+
+</body>
+
+</html>
