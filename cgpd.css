@@ -16,6 +16,7 @@ body
 a img
 {
   padding-top:20%;
+  padding-left: 50%;
 }
 
 .info
@@ -43,7 +44,7 @@ h1
   padding-bottom: 2.3%;
   font-family: 'Dangrek', cursive;
   margin: 0%;
-  font-size: 175%;
+  font-size: 190%;
   color:#E4FF00;
   background: linear-gradient(to right,#000776,#060F69);
 }
