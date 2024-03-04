@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CGPA Calculator</title>
+<link rel="shortcut icon" href="images/fav.ico" type="image/x-icon">
+<link rel="stylesheet" href="cgpa.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Delius&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>CGPA CALCULATOR</h1>
+
+<div class="get">
+<h3>Completed Semesters</h3>
+<select id="numScoresSelect">
+  <option value="2">2 semesters</option>
+  <option value="3">3 semesters</option>
+  <option value="4">4 semesters</option>
+  <option value="5">5 semesters</option>
+  <option value="6">6 semesters</option>
+  <option value="7">7 semesters</option>
+  <option value="8">8 semesters</option>
+</select>
+</div>
+
+<div class="sem" id="scoreInputs" style="display: none;">
+  <h2>ENTER GPA</h2>
+  <div id="scoreInputContainer"></div>
+  <button id="calculateBtn">CALCULATE CGPA</button>
+</div>
+
+<div class="res" id="result" style="display: none;">
+  <p id="average"></p>
+</div>
+
+<script>
+  document.getElementById("numScoresSelect").addEventListener("change", function() {
+  var numScores = parseInt(document.getElementById("numScoresSelect").value);
+  var scoreInputContainer = document.getElementById("scoreInputContainer");
+  scoreInputContainer.innerHTML = "";
+  for (var i = 1; i <= numScores; i++) {
+    var input = document.createElement("input");
+    input.type = "number";
+    input.id = "score" + i;
+    input.placeholder = "Semester " + i;
+    input.classList.add("scoreInput"); // Add class to input element
+    scoreInputContainer.appendChild(input);
+    scoreInputContainer.appendChild(document.createElement("br"));
+  }
+
+  document.getElementById("scoreInputs").style.display = "block";
+});
+
+document.getElementById("numScoresSelect").dispatchEvent(new Event('change'));
+
+document.getElementById("calculateBtn").addEventListener("click", function() {
+  var numScores = parseInt(document.getElementById("numScoresSelect").value);
+  var scores = [];
+  var total = 0;
+  for (var i = 1; i <= numScores; i++) {
+    var score = parseFloat(document.getElementById("score" + i).value);
+    scores.push(score);
+    total += score;
+  }
+  var average = total / numScores;
+  document.getElementById("result").style.display = "block";
+  document.getElementById("average").innerText = "CGPA SCORE:  " + average.toFixed(2);
+});
+
+  </script>
+ 
+
+</body>
+</html>

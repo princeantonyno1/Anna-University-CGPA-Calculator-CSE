@@ -23,7 +23,7 @@ body
 
 a img
 {
-  padding-top: 25%;
+  padding-top: 22%;
   padding-right: 20px;
 }
 
@@ -45,7 +45,7 @@ a img
 
 h1
 {
-  padding-right:17%;
+  padding-right:0%;
   padding-top: 2%;
   padding-left: 1.4%;
   padding-bottom: 2.3%;
@@ -208,6 +208,29 @@ h1
   margin: 0 10px;
 } 
 
+.foot
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 
+}
 
+.foot button
+{
+  padding: 2% 5% 2% 5%;
+  margin-top:3%;
+  margin-bottom: 7.5%;
+  font-size: 190%;
+  background-color: #00fbff7c;
+  border-radius: 17px;
+  border: none;
+  border-right: 6px solid #430f58;
+  border-bottom: 5px solid #6643b5;
+  border-top:3.5px solid #7555c2;
+  border-left:3px solid #8594e4;
+  font-family: 'Righteous', cursive;
+
+}
 
