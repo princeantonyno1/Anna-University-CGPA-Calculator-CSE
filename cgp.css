@@ -12,6 +12,10 @@ body
 
 .top
 {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
   margin-right: 0%;
   border-left:7px solid #FF0067;
   background-color:#EEC7F5;
@@ -29,7 +33,7 @@ a img
 
 .info
 {
-  
+  margin-top:14%;
 }
 
 
